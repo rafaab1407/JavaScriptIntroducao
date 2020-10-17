@@ -1,6 +1,6 @@
 document.querySelector("#adicionar-paciente").addEventListener("click", function(event){
     event.preventDefault();
-    
+    alert("rafael")
     var form = document.querySelector("#form-adiciona"); 
     var paciente =obtemPacienteForm(form);
     var pacienteTr=montaTr(paciente);
