@@ -3,13 +3,15 @@ document.querySelector("#adicionar-paciente").addEventListener("click", function
     alert("rafael")
     var form = document.querySelector("#form-adiciona"); 
     var paciente =obtemPacienteForm(form);
-    var pacienteTr=montaTr(paciente);
-    var tabela = document.querySelector("#tabela-pacientes");
-    tabela.appendChild(pacienteTr);
-
+    adicionaPacienteNaTabela(paciente);
     form.reset();
 });
 
+function adicionaPacienteNaTabela(paciente){
+    var pacienteTr=montaTr(paciente);
+    var tabela = document.querySelector("#tabela-pacientes");
+    tabela.appendChild(pacienteTr);
+}
 
 
 function obtemPacienteForm(form){
